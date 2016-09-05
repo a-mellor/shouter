@@ -10,7 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'monban', '0.0.6'
+gem 'monban'
+gem 'monban-generators'
 
 
 group :development, :test do
