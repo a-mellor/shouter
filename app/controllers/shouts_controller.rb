@@ -4,8 +4,11 @@ class ShoutsController < ApplicationController
   end
   def create
     shout = current_user.shouts.build(shout_paramaters)
-    shout.save
-    redirect_to dashboard_path
+    if shout.save
+      redirect_to dashboard_path
+    else flash.alert = "Could not shout"
+      redirect_to dashboard_path
+    end
   end
 
   private
