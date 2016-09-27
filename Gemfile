@@ -12,6 +12,7 @@ gem 'jbuilder'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'monban'
 gem 'monban-generators'
+gem 'paperclip'
 
 
 group :development, :test do
