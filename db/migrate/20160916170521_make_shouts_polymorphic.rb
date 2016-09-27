@@ -7,7 +7,7 @@ class MakeShoutsPolymorphic < ActiveRecord::Migration
   end
 
   def down
-    remove_index :shouts, [:content_type, :content_id]
+    remove_index :shouts, column: [:content_type, :content_id]
     remove_column :shouts, :content_id
     remove_column :shouts, :content_type
     add_column :shouts, :body, :string
